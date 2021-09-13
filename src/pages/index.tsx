@@ -45,6 +45,7 @@ function PageAppBar({ onSideMenuIconClick }: PageAppBarProps) {
           <>
             <Button
               className="md:hidden mr-4 p-1"
+              aria-label="Open sidebar"
               onClick={onSideMenuIconClick}
             >
               <svg
@@ -60,7 +61,10 @@ function PageAppBar({ onSideMenuIconClick }: PageAppBarProps) {
         right={
           <Menu
             menuButton={
-              <MenuButton className="outline-none focus:outline-none ring-accent focus-visible:ring-2 hover:ring-2 rounded">
+              <MenuButton
+                aria-label="Open list actions"
+                className="outline-none focus:outline-none ring-accent focus-visible:ring-2 hover:ring-2 rounded"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 16 16"

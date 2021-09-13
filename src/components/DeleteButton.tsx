@@ -9,6 +9,7 @@ function DeleteButton({ className = '', onClick }: Props) {
   return (
     <Button
       data-testid="delete-icon-btn"
+      aria-label="Delete todo"
       className={className}
       onClick={onClick}
     >

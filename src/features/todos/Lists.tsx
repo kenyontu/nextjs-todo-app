@@ -22,7 +22,11 @@ function Lists({
     >
       <div className="px-5 py-3 flex justify-between items-center text-gray-400 border-b border-gray-500">
         <span className="text-2xl">Lists</span>
-        <Button data-testid="add-list-btn" onClick={onAddListClick}>
+        <Button
+          data-testid="add-list-btn"
+          aria-label="Add list"
+          onClick={onAddListClick}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-8 h-8 p-2 fill-current text-gray-400"

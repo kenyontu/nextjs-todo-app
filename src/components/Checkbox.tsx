@@ -10,7 +10,7 @@ type Props = {
 
 function Checkbox({ isChecked, onToggle }: Props) {
   return (
-    <Button data-testid="checkbox" onClick={onToggle}>
+    <Button data-testid="checkbox" aria-label="Checkbox" onClick={onToggle}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="w-5 h-5 border border-gray-500 rounded"
