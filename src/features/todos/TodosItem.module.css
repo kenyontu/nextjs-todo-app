@@ -1,0 +1,10 @@
+@media (hover: hover) {
+  .deleteBtn {
+    opacity: 0;
+  }
+
+  .todo:hover > .deleteBtn,
+  .todo:focus-within > .deleteBtn {
+    opacity: 1;
+  }
+}

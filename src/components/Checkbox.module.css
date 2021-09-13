@@ -1,0 +1,13 @@
+.check {
+  fill: none;
+  stroke: var(--accent-color);
+  stroke-width: 10;
+  stroke-dasharray: 78.15;
+  stroke-dashoffset: 78.15;
+  transition: stroke-dashoffset 300ms ease;
+}
+
+.checked {
+  transition: stroke-dashoffset 300ms ease;
+  stroke-dashoffset: 0;
+}

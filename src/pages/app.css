@@ -1,0 +1,56 @@
+@tailwind base;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#__next {
+  height: 100%;
+  overflow: hidden;
+}
+
+@layer base {
+  html {
+    background-color: theme('colors.main');
+    --accent-color: theme('colors.accent');
+  }
+
+  ::selection {
+    background: theme('colors.blue.300');
+    /* WebKit/Blink Browsers */
+  }
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 100ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.ReactModal__Content {
+  transform: translate(0, -30%);
+  transition: transform 100ms ease-out;
+}
+
+.ReactModal__Content--after-open {
+  transform: translate(0, 0);
+}
+
+.ReactModal__Content--before-close {
+  transform: translate(0, -30%);
+}
+
+.szh-menu__item--active {
+  background-color: var(--accent-color) !important;
+}
