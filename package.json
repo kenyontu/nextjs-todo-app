@@ -38,6 +38,7 @@
     "@types/react-modal": "^3.12.1",
     "autoprefixer": "^10.0.4",
     "babel-jest": "^27.0.5",
+    "eslint-config-next": "^11.1.2",
     "jest": "^27.0.5",
     "jest-css-modules": "^2.1.0",
     "postcss": "^8.1.10",
